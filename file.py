@@ -1,4 +1,5 @@
 import sys
+from ast import Index
 
 try:
     text_file = open(sys.argv[1],"r")
@@ -13,6 +14,9 @@ try:
             print("Error -", e)
     text_file.close()
 except IOError as e:
+    print("Error -", e)
+    exit()
+except IndexError as e:
     print("Error -", e)
     exit()
 
