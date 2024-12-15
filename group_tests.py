@@ -28,3 +28,7 @@ class TestCases(unittest.TestCase):
         result = group.groups_of_3(input)
         expected = []
         self.assertEqual(expected,result)
+
+
+if __name__ == '__main__':
+    unittest.main()
